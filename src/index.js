@@ -1,3 +1,3 @@
 import { logA } from './lib'
 
-logA()
+export default logA()

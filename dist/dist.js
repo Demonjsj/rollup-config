@@ -2,4 +2,6 @@ function logA () {
   console.log('function logA called');
 }
 
-logA();
+var index = logA();
+
+export default index;

@@ -2,8 +2,13 @@
   "name": "rollup-config",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "build": "rollup ./src/index.js -o ./dist/dist.js"
+  "scripts": { 
+    "build": "rollup ./src/index.js -o ./dist/dist.js",
+    "build:amd": "rollup ./src/index.js -f amd -o ./dist/amd.js",
+    "build:cjs": "rollup ./src/index.js -f cjs -o ./dist/cjs.js",
+    "build:iife": "rollup ./src/index.js -f iife -n result -o ./dist/iife.js",
+    "build:umd": "rollup ./src/index.js -f umd -n result -o ./dist/umd.js",
+    "build:all": "npm run build && npm run build:amd && npm run build:cjs && npm run build:iife && npm run build:umd"
   },
   "devDependencies": {
     "rollup": "^2.34.1"
