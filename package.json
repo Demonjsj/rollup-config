@@ -1,0 +1,11 @@
+{
+  "name": "rollup-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup ./src/index.js -o ./dist/dist.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.34.1"
+  }
+}
